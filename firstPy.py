@@ -1,3 +1,5 @@
+import keyword
+
 # 001.注释使用
 print("hello world!")  # 井号前必须两个空格
 # good
@@ -48,11 +50,18 @@ str5 = "12.4"
 int(str4)
 float(str5)
 
-# 008.
+# 008.格式化字符串%
+print("%s" % str1)
+print("%s%s%s" % (str1, str2, str3))  # 多个变量输出
+print("%06d" % x1)  # 输出6位整数,缺位以0补齐
+print("%4d" % x1)  # 输出4位整数,缺位以空格补齐
+print("%.02f" % price)  # 小数点后输出2位
+print("%f" % price)
+print("%%%s" % str1)  # 输出百分号%
 
+# 009.显示关键字
+print(keyword.kwlist)
 
-
-# 009.
 # 010.
 # 011.
 # 012.

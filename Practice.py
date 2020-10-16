@@ -14,3 +14,10 @@ print("苹果单价%.2f元/斤，购买了%.2f斤，需支付%.2f元" % (price, 
 
 scale = 10
 print("数据比例为%.2f%%" % scale)
+
+# 002.判断语句
+age = int(input("请输入年龄 : "))
+if age >= 18:
+    print("可以进入网吧")
+else:
+    print("不可以进入网吧")

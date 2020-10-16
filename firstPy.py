@@ -62,6 +62,12 @@ print("%%%s" % str1)  # 输出百分号%
 # 009.显示关键字
 print(keyword.kwlist)
 
-# 010.
+# 010.判断
+if x1 == 10:  # 条件后不跟空格直接:/折叠/最下方显示条件
+    print("isTrue")
+    print("good")
+else:
+    print("isFalse")
+
 # 011.
 # 012.

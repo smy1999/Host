@@ -4,6 +4,7 @@ import keyword
 print("hello world!")  # 井号前必须两个空格
 # good
 print()  # 默认带换行符
+print(end='')  # 不换行
 print("nice Python")
 """
 This is multi line.
@@ -65,9 +66,37 @@ print(keyword.kwlist)
 # 010.判断
 if x1 == 10:  # 条件后不跟空格直接:/折叠/最下方显示条件
     print("isTrue")
-    print("good")
+elif x1 == 9:
+    print("isMid")
 else:
     print("isFalse")
 
-# 011.
-# 012.
+# 011.逻辑运算and/or/not
+a = 4
+b = 5
+if a > 4 and b < 5:
+    print("1")
+elif a > 4 or b < 4:
+    print("2")
+elif not a == 4:
+    print("3")
+
+# 012.判断过长缩进格式
+if ((a == 1 and b == 1)
+        or (a == 2 and b == 2)
+        or (a == 2 and b == 3)):
+    print("格式")
+
+# 013.循环
+i = 1
+while i <= 5:
+    print("round %d " % i, end='')
+    i += 1
+# break退出循环, continue不执行之后代码块而进入下一循环
+
+# 014.转义字符
+# \t制表符 \n换行 \\反斜杠 \'单引号 \"双引号 \r回车
+print("1 2 3")
+print("10 20 30")
+print("1\t2\t3")  # 制表符\t
+print("10\t20\t30")

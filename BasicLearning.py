@@ -105,3 +105,6 @@ print("10\t20\t30")
 # 015.函数调用:先import文件,再调用/文件中直接调用
 MultiplicationTable.multiplication_table()
 # 函数结束有两行空再运行
+# step over 越过函数
+# step into 进入函数
+# 函数前后量空行, 注释在函数内部第一行

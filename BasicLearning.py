@@ -1,4 +1,5 @@
 import keyword
+import MultiplicationTable
 
 # 001.注释使用
 print("hello world!")  # 井号前必须两个空格
@@ -100,3 +101,7 @@ print("1 2 3")
 print("10 20 30")
 print("1\t2\t3")  # 制表符\t
 print("10\t20\t30")
+
+# 015.函数调用:先import文件,再调用/文件中直接调用
+MultiplicationTable.multiplication_table()
+# 函数结束有两行空再运行

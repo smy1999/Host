@@ -108,3 +108,54 @@ MultiplicationTable.multiplication_table()
 # step over 越过函数
 # step into 进入函数
 # 函数前后量空行, 注释在函数内部第一行
+
+# 016.列表List可存储不同类型数据 有序
+name_list = ["lg", "smy", "lzy", "my", "zzp"]
+print(name_list[2])
+print(name_list.index("smy"))  # 目标值所在索引位置index, 不在则报错
+name_list[3] = "mbd"  # 修改
+name_list.append("wow")  # 增加到末尾
+name_list.insert(3, "hey")  # 在指定位置增加, 其后向后推移
+name_list.extend(["zzz", "tzp"])  # 列表末加入新列表
+name_list.remove("smy")  # 删除第一个出现的指定数据
+name_list.pop()  # 删除末尾数据/指定位置数据
+del name_list[3]  # 删除指定位置(将变量从内存中删除, debug中删除这个变量)
+name_list.clear()  # 清空列表
+name_list_len = len(name_list)  # 统计列表中元素个数
+name_list.count("lg")  # 统计指定数据出现的次数
+name_list.sort()  # 升序
+name_list.sort(reverse=True)  # 降序
+name_list.reverse()  # 翻转
+name_list.copy()
+for name in name_list:  # for循环遍历List
+    print(name)
+
+# 017.元组Tuple表示多个元素的序列,不可修改
+info_tuple = ("smy", 22, 178)
+empty_tuple = ()  # 空元组
+one_element_tuple = ("smy", )  # 只有一个元素的元组,若无","则视为括号内类型
+info_tuple.count(22)  # 计算指定元素出现次数
+len(info_tuple)  # 计算元素个数
+var = info_tuple[1]  # 访问指定位置
+info_tuple.index(22)  # 目标值所在索引位置index
+for info_element in info_tuple:  # 应当注意数据类型不同, 循环内部可能出现不同
+    print(info_element)
+print("%s %d %f" % ("smy", 10, 10.4))  # 后面括号本质就是元组
+print("%s %d %f" % info_tuple)
+info_str = "%s %d %f" % info_tuple
+list(info_str)  # 转换格式
+tuple(name_list)
+
+# 018.字典Dictionary 无序
+# 键唯一, 只能为字符串、数字、元组
+smy = {"name": "shaomingyue",
+       "age": 21,
+       "gender": True,
+       "height": 1.78}
+var1 = smy["name"]  # 取值
+smy["language"] = "java"  # 增加, 存在则修改
+smy.pop("language")  # 删除指定键值对
+len(smy)  # 统计键值对数量
+smy2 = {"language": "Java"}
+smy.update(smy2)  # 合并字典, 若有重复则覆盖
+smy.clear()  # 清空

@@ -159,3 +159,5 @@ len(smy)  # 统计键值对数量
 smy2 = {"language": "Java"}
 smy.update(smy2)  # 合并字典, 若有重复则覆盖
 smy.clear()  # 清空
+for k in smy:
+    print("%s : %s" % (k, smy[k]))
